@@ -61,7 +61,7 @@ body > header {
   align-items: center;
 }
 .hero .text {
-  width: 55%;
+  width: 100%;
   margin-right: 50px;
 }
 .hero .text * {
@@ -69,10 +69,10 @@ body > header {
   font-size: 1.3em;
 }
 .hero .text h1 {
-  font-size: 4em;
+  font-size: 2em;
 }
 .hero .text h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .hero img {
   max-width: 30vw;
@@ -93,6 +93,59 @@ article h2 {
 article p {
   margin-top: 1em;
   text-align: justify;
-  text-indent: 3em;
+  text-indent: 1em;
   font-size: 1.2rem;
+}
+
+/* Mobile S */
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .logo {
+    max-height: 7vh;
+    width: auto;
+  }
+  .hero {
+    display: block;
+  }
+  .hero img {
+    max-width: 90%;
+    height: auto;
+  }
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__links, .lang_btn {
+    display: none;
+  }
+}
+
+/* Mobile L */
+@media screen and (min-width: 425px) and (max-width: 1024px) {}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  .logo {
+    max-height: 10vh;
+    width: auto;
+  }
+  .hero .text {
+    width: 55%;
+    margin-right: 50px;
+  }
+  .hero .text h1 {
+    font-size: 4em;
+  }
+  .hero .text h2 {
+    font-size: 2em;
+  }
+  .hero img {
+    max-width: 30vw;
+    height: auto;
+  }
+  article p {
+    margin-top: 1em;
+    text-align: justify;
+    text-indent: 3em;
+    font-size: 1.2rem;
+  }
 }
