@@ -236,6 +236,31 @@ article p {
   text-indent: 1em;
   font-size: 1.2rem;
 }
+#pengembang img {
+  width: 20vw;
+  height: 70vh;
+  object-fit: cover;
+}
+#pengembang {
+  margin-top: 4em;
+}
+#pengembang h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#pengembang figcaption {
+  text-align: center;
+}
+#pengembang .row {
+  justify-content: space-between;
+  overflow-x: auto;
+}
+#pengembang .row figure img {
+  border-radius: 2em;
+}
+#pengembang .row figure {
+  margin: 0 2vw;
+}
 footer {
   justify-content: space-between;
 }
